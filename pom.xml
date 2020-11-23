@@ -6,7 +6,7 @@
 
     <groupId>com.scaler.mohit</groupId>
     <artifactId>stock-analyzer</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <build>
         <plugins>
             <plugin>
@@ -38,11 +38,6 @@
             <version>2.11.3</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.3.1</version>
-        </dependency>
-        <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>2.11.3</version>
@@ -53,4 +48,25 @@
             <version>5.2.10.RELEASE</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+
+            <url>https://koro.jfrog.io/artifactory/scaler</url>
+        </repository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://koro.jfrog.io/artifactory/scaler</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 </project>
