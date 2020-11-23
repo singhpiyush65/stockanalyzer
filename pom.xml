@@ -48,4 +48,25 @@
             <version>5.2.10.RELEASE</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+
+            <url>https://koro.jfrog.io/artifactory/scaler</url>
+        </repository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://koro.jfrog.io/artifactory/scaler</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 </project>
